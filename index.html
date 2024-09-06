@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hallo</h1>
+    <script>
+        const date = new Date();
+        const jadwal = {
+            senin: 'tes, tes, tes',
+            selasa: 'tes, tes, tes',
+            rabu: 'tes, tes, tes',
+            kamis: 'tes, tes, tes',
+            jumat: 'tes, tes, tes'
+        }
+        const hari = ['minggu', 'senin', 'selasa', 'rabu', 'kamis', 'jumat', 'sabtu'];
+        const hariIni = hari[date.getDay()];
+        console.log(`jadwal hari ini\n${hariIni}: ${jadwal[hariIni]}`);
+    </script>
+</body>
+</html>
