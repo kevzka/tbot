@@ -1,6 +1,6 @@
 module.exports = {
   name: "tagall",
-  execute: async (sock, msg) => {
+  execute: async ({sock, msg}) => {
     const sender = msg.key.remoteJid;
     const groupId = sender; // This should be your group ID
     try {

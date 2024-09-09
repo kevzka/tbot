@@ -4,7 +4,7 @@ const path = require("path");
 
 module.exports = {
   name: "jadwal",
-  execute: async (sock, msg) => {
+  execute: async ({sock, msg}) => {
     const sender = msg.key.remoteJid;
     const date = new Date();
     const jadwal = {

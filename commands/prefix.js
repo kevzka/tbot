@@ -2,7 +2,7 @@
 module.exports = {
     name: 'setprefix',
     owner: true,
-    execute: async (sock, msg, msgText) => {
+    execute: async ({sock, msg, msgText}) => {
         const sender = msg.key.remoteJid;
         const part = msgText.split(' ');
         global.prefix = part[1];
