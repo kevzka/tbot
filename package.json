@@ -8,7 +8,8 @@
     "mysql": "^2.18.1",
     "node-fetch": "^3.3.2",
     "qrcode-terminal": "^0.12.0",
-    "sharp": "^0.32.6"
+    "sharp": "^0.32.6",
+    "wa-sticker-formatter": "^4.4.4"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"

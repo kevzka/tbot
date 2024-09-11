@@ -1,10 +1,9 @@
-const sharp = require('sharp');
 const fs = require("fs");
 const path = require("path");
 
 module.exports = {
   name: "jadwal",
-  execute: async ({sock, msg}) => {
+  execute: async ({sock, msg, thumbnail}) => {
     const sender = msg.key.remoteJid;
     const date = new Date();
     const jadwal = {
@@ -27,26 +26,14 @@ module.exports = {
     const send = `jadwal hari ini\n${hariIni}: ${jadwal[hariIni]}`;
     const isGroupMessage = sender.endsWith("@g.us");
 
-    // Tentukan path yang benar untuk file jadwal.jpg dan thumbnail
-    const imagePath = path.join(__dirname, '../jadwal.jpg');
-
     try {
-      // Baca gambar utama
-      const image = fs.readFileSync(imagePath);
-
-      // Buat thumbnail dengan sharp
-      const thumbnail = await sharp(image)
-        .resize(200) // Ukuran thumbnail
-        .jpeg()
-        .toBuffer();
-
         // Kirim gambar dengan thumbnail
         await sock.sendMessage(
           sender,
           {
-            image: image,
-            caption: "Here is your image!",
-            jpegThumbnail: thumbnail,  // Tambahkan thumbnail sebagai buffer
+            image: fs.readFileSync("./media/image/jadwal.jpg"),
+            caption: "noh jadwal",
+            jpegThumbnail: thumbnail("./media/image/jadwal.jpg"),  // Tambahkan thumbnail sebagai buffer
           },
           { quoted: msg }
         );

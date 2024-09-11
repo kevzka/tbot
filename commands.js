@@ -25,7 +25,5 @@ function loadCommands() {
 
     return commands;
 }
-const commands = loadCommands();
-console.log(commands['hai']);
 module.exports = loadCommands;
 
