@@ -15,8 +15,13 @@ const { userInfo } = require("os");
 const loadCommands = require("./commands.js");
 const { recieveMessage } = require("./handler.js");
 const sharp = require('sharp');
+const { is } = require("express/lib/request.js");
+const { DATE } = require("mysql/lib/protocol/constants/types.js");
+let isJam = true;
+global.time = new Date();
 let myWhatsAppId, owner;
 global.prefix = "?";
+global.piketHour = '0';
 
 // Membaca file JSON yang berisi config
 fs.readFile("config.json", "utf8", (err, data) => {
@@ -44,6 +49,17 @@ async function thumbnail(mediaPath) {
 	return thumbnail;
 }
 
+(function(isJam) {
+    if (isJam) {
+        setInterval(() => {
+            global.time = new Date();
+			console.log(global.time);
+        }, 500);
+    } else {
+        console.log(`Waktu : ${isJam}`);
+    }
+})(isJam);
+
 //memuat semua commands
 const commands = loadCommands();
 
@@ -58,7 +74,7 @@ async function connectToWhatsApp() {
 
 	sock.ev.on("creds.update", saveCreds);
 
-	sock.ev.on("connection.update", (update) => {
+	sock.ev.on("connection.update", async (update) => {
 		const { connection, lastDisconnect } = update;
 		if (connection === "close") {
 			//koneksi tertutup
@@ -94,7 +110,10 @@ async function connectToWhatsApp() {
 		owner,
 		thumbnail,
 		fs,
-		path
+		path,
+		downloadMediaMessage,
+		logger,
+		writeFile,
 	};
 	recieveMessage();
 }

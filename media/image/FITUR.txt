@@ -1,0 +1,25 @@
+		FITUR 
+
+**UTAMA**
+- Jadwal done
+- Uang Kas
+- Daily reminder jadwal piket done 1/2
+- opengumuman / Tag all / broadcast ( Sejenis hidetag ) done
+
+**KEDUA**
+- Warn beserta UnWarn
+- Sticker dan Toimg
+- Ping ( status server )
+- Setprefix done
+- delmsg
+- Donasi
+- Creator ( opsional mau nambahin atau ga nya )
+
+**MAJOR ( Kapan kapan )**
+	RPG SECTION
+udah ada register.js sama unregister.js nya jadi gaperlu pusing bikin lagi soalnya user otomatis masuk database
+- INV ( inventory )
+- Judi
+- Menu done
+- Shop
+- Slots

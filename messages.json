@@ -1,0 +1,558 @@
+[
+  {
+    "key": {
+      "remoteJid": "6283116752250@s.whatsapp.net",
+      "fromMe": false,
+      "id": "7886E14F9CDE44F3C9"
+    },
+    "messageTimestamp": 1726468407,
+    "pushName": "kevin",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "?test 12",
+        "contextInfo": {
+          "expiration": 0,
+          "ephemeralSettingTimestamp": "0",
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT"
+          }
+        }
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "9VrQk8S5KWjsRQ==",
+          "senderTimestamp": "1725583771",
+          "recipientKeyHash": "LTYDQEw7hXgNeQ==",
+          "recipientTimestamp": "1725540321"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "62895402825200@s.whatsapp.net",
+      "fromMe": true,
+      "id": "23A907EBC7DB97755CE8910BADCE3F86"
+    },
+    "messageTimestamp": 1726468409,
+    "broadcast": false,
+    "status": 2,
+    "message": {
+      "protocolMessage": {
+        "type": "PEER_DATA_OPERATION_REQUEST_RESPONSE_MESSAGE",
+        "peerDataOperationRequestResponseMessage": {
+          "peerDataOperationRequestType": "PLACEHOLDER_MESSAGE_RESEND",
+          "stanzaId": "3EB07D923DF8BDCFC9CABE",
+          "peerDataOperationResult": [
+            {
+              "mediaUploadResult": "SUCCESS",
+              "placeholderMessageResendResponse": {
+                "webMessageInfoBytes": "Cj0KFzEyMDM2MzMxNzg5NTQ4NzQ2MkBnLnVzEAAaIEZFQzQ2MkQxMkFDRTdCQ0FENkVBNjY1NkU3NUQ0MzFGEoUBMoIBChhBbXVuIGxhbWJhdCBueXVzdW4gYmVudWFQAIoBYAoUM0FFMUE0MDcyNDMwNEJDMERCRkISHDYyODEyNTY0NDk5MzVAcy53aGF0c2FwcC5uZXQaKgooYnR3IGFkYSBrYXlhIGRpc3VydWggbmdhcGFpIGdpdHUga2gga2VuYegBABj+y5u3BiocNjI4MTM0OTIyNDg1NkBzLndoYXRzYXBwLm5ldPIDEgoQAbMNdcoroSCne2u9jCfn7ogEAA=="
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "120363317895487462@g.us",
+      "fromMe": false,
+      "id": "FEC462D12ACE7BCAD6EA6656E75D431F"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Amun lambat nyusun benua",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "3AE1A40724304BC0DBFB",
+          "participant": "6281256449935@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "btw ada kaya disuruh ngapai gitu kh kena"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1726408190",
+    "participant": "6281349224856@s.whatsapp.net",
+    "reportingTokenInfo": {
+      "reportingTag": "AbMNdcoroSCne2u9jCfn7g=="
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "120363317895487462@g.us",
+      "fromMe": false,
+      "id": "FEC462D12ACE7BCAD6EA6656E75D431F",
+      "participant": "6281349224856@s.whatsapp.net"
+    },
+    "messageTimestamp": 1726468410,
+    "pushName": "Ahmad Sajidan Athaillah",
+    "broadcast": false,
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363317895487462@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwih+uulARAkGiD9NQJJCXEG3HsBU1OsgpQ/5/35sg9o+56WfRyWk3dhCiIhBeGgpr5G7uZL5+d3SZYv80u5UHmaEYESgvb8jMbYH/lT"
+      },
+      "extendedTextMessage": {
+        "text": "Amun lambat nyusun benua",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "3AE1A40724304BC0DBFB",
+          "participant": "6281256449935@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "btw ada kaya disuruh ngapai gitu kh kena"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "m0GtkwottLZ19A==",
+          "senderTimestamp": "1726112427",
+          "recipientKeyHash": "LTYDQEw7hXgNeQ==",
+          "recipientTimestamp": "1725540321"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "62895402825200@s.whatsapp.net",
+      "fromMe": true,
+      "id": "9F559D025C7A34D6AB45914D9FC35A1E"
+    },
+    "messageTimestamp": 1726468414,
+    "broadcast": false,
+    "status": 2,
+    "message": {
+      "protocolMessage": {
+        "type": "PEER_DATA_OPERATION_REQUEST_RESPONSE_MESSAGE",
+        "peerDataOperationRequestResponseMessage": {
+          "peerDataOperationRequestType": "PLACEHOLDER_MESSAGE_RESEND",
+          "stanzaId": "3EB033DA21BE30B13D7F07",
+          "peerDataOperationResult": [
+            {
+              "mediaUploadResult": "SUCCESS",
+              "placeholderMessageResendResponse": {
+                "webMessageInfoBytes": "Cj0KFzEyMDM2MzMxNzg5NTQ4NzQ2MkBnLnVzEAAaIDVFQTlFMzk1MDFBQTA1QTBCMEU2NDA3OTYzRjQ3NjI0EhUKE0lrYW4gaGl1IG1kYW4gdG9tYXQY3IWctwYqHDYyODEzNDkyMjQ4NTZAcy53aGF0c2FwcC5uZXTyAxIKEAGz7Ra2RtYP28KwvZspaIyIBAA="
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "120363317895487462@g.us",
+      "fromMe": false,
+      "id": "5EA9E39501AA05A0B0E6407963F47624",
+      "participant": "6281349224856@s.whatsapp.net"
+    },
+    "messageTimestamp": 1726468414,
+    "pushName": "Ahmad Sajidan Athaillah",
+    "broadcast": false,
+    "message": {
+      "conversation": "Ikan hiu mdan tomat",
+      "senderKeyDistributionMessage": {
+        "groupId": "120363317895487462@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwih+uulARAkGiD9NQJJCXEG3HsBU1OsgpQ/5/35sg9o+56WfRyWk3dhCiIhBeGgpr5G7uZL5+d3SZYv80u5UHmaEYESgvb8jMbYH/lT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "m0GtkwottLZ19A==",
+          "senderTimestamp": "1726112427",
+          "recipientKeyHash": "LTYDQEw7hXgNeQ==",
+          "recipientTimestamp": "1725540321"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "120363317895487462@g.us",
+      "fromMe": false,
+      "id": "5EA9E39501AA05A0B0E6407963F47624"
+    },
+    "message": {
+      "conversation": "Ikan hiu mdan tomat"
+    },
+    "messageTimestamp": "1726415580",
+    "participant": "6281349224856@s.whatsapp.net",
+    "reportingTokenInfo": {
+      "reportingTag": "AbPtFrZG1g/bwrC9mylojA=="
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "62895402825200@s.whatsapp.net",
+      "fromMe": true,
+      "id": "769A2334152487A3579C943B1F5470AA"
+    },
+    "messageTimestamp": 1726468419,
+    "broadcast": false,
+    "status": 2,
+    "message": {
+      "protocolMessage": {
+        "type": "PEER_DATA_OPERATION_REQUEST_RESPONSE_MESSAGE",
+        "peerDataOperationRequestResponseMessage": {
+          "peerDataOperationRequestType": "PLACEHOLDER_MESSAGE_RESEND",
+          "stanzaId": "3EB02DB4739CB1EE591E25",
+          "peerDataOperationResult": [
+            {
+              "mediaUploadResult": "SUCCESS",
+              "placeholderMessageResendResponse": {
+                "webMessageInfoBytes": "Cj0KFzEyMDM2MzMxNzg5NTQ4NzQ2MkBnLnVzEAAaIDg0MDdEODY5MTg1NzI3N0Y2Q0ZGRTM4OTE5M0ZGNTIxEgcKBVRpdGlwGLuGn7cGKhw2MjgxMzQ5MjI0ODU2QHMud2hhdHNhcHAubmV08gMSChABs2TLN3K8Y4ETMsOOOjbjiAQA"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "120363317895487462@g.us",
+      "fromMe": false,
+      "id": "8407D8691857277F6CFFE389193FF521",
+      "participant": "6281349224856@s.whatsapp.net"
+    },
+    "messageTimestamp": 1726468420,
+    "pushName": "Ahmad Sajidan Athaillah",
+    "broadcast": false,
+    "message": {
+      "conversation": "Titip",
+      "senderKeyDistributionMessage": {
+        "groupId": "120363317895487462@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwih+uulARAkGiD9NQJJCXEG3HsBU1OsgpQ/5/35sg9o+56WfRyWk3dhCiIhBeGgpr5G7uZL5+d3SZYv80u5UHmaEYESgvb8jMbYH/lT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "m0GtkwottLZ19A==",
+          "senderTimestamp": "1726112427",
+          "recipientKeyHash": "LTYDQEw7hXgNeQ==",
+          "recipientTimestamp": "1725540321"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "120363317895487462@g.us",
+      "fromMe": false,
+      "id": "8407D8691857277F6CFFE389193FF521"
+    },
+    "message": {
+      "conversation": "Titip"
+    },
+    "messageTimestamp": "1726464827",
+    "participant": "6281349224856@s.whatsapp.net",
+    "reportingTokenInfo": {
+      "reportingTag": "AbNkyzdyvGOBEzLDjjo24w=="
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "62895402825200@s.whatsapp.net",
+      "fromMe": true,
+      "id": "8FF3B29A235EA8762BEF8E6F6140BA60"
+    },
+    "messageTimestamp": 1726468425,
+    "broadcast": false,
+    "status": 2,
+    "message": {
+      "protocolMessage": {
+        "type": "PEER_DATA_OPERATION_REQUEST_RESPONSE_MESSAGE",
+        "peerDataOperationRequestResponseMessage": {
+          "peerDataOperationRequestType": "PLACEHOLDER_MESSAGE_RESEND",
+          "stanzaId": "3EB01C316DBACB2FC7A323",
+          "peerDataOperationResult": [
+            {
+              "mediaUploadResult": "SUCCESS",
+              "placeholderMessageResendResponse": {
+                "webMessageInfoBytes": "Cj0KFzEyMDM2MzMxNzg5NTQ4NzQ2MkBnLnVzEAAaIEI5REFDMDM4OTJFRDhCQzYwMTZGNjJDMjJBQUYxQzlCEnQycgocTmdhbWJpbCB0aWtldCBkaSBnb3IgYmVyYXJ0aVAAigFMCiA0MUI0QjExQjU5RTdCMDFCNjk0MEQxQ0E3OUFFQzkxMBIcNjI4MTU0NTg5NjIwNkBzLndoYXRzYXBwLm5ldBoKCghCb2xlaCBqYegBABihiJ+3BiocNjI4MTM0OTIyNDg1NkBzLndoYXRzYXBwLm5ldPIDEgoQAbO3FpFvTw0GevV/SS5Lr4gEAA=="
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "120363317895487462@g.us",
+      "fromMe": false,
+      "id": "B9DAC03892ED8BC6016F62C22AAF1C9B",
+      "participant": "6281349224856@s.whatsapp.net"
+    },
+    "messageTimestamp": 1726468425,
+    "pushName": "Ahmad Sajidan Athaillah",
+    "broadcast": false,
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363317895487462@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwih+uulARAkGiD9NQJJCXEG3HsBU1OsgpQ/5/35sg9o+56WfRyWk3dhCiIhBeGgpr5G7uZL5+d3SZYv80u5UHmaEYESgvb8jMbYH/lT"
+      },
+      "extendedTextMessage": {
+        "text": "Ngambil tiket di gor berarti",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "41B4B11B59E7B01B6940D1CA79AEC910",
+          "participant": "6281545896206@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Boleh ja"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "m0GtkwottLZ19A==",
+          "senderTimestamp": "1726112427",
+          "recipientKeyHash": "LTYDQEw7hXgNeQ==",
+          "recipientTimestamp": "1725540321"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "120363317895487462@g.us",
+      "fromMe": false,
+      "id": "B9DAC03892ED8BC6016F62C22AAF1C9B"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Ngambil tiket di gor berarti",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "41B4B11B59E7B01B6940D1CA79AEC910",
+          "participant": "6281545896206@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Boleh ja"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1726465057",
+    "participant": "6281349224856@s.whatsapp.net",
+    "reportingTokenInfo": {
+      "reportingTag": "AbO3FpFvTw0GevV/SS5Lrw=="
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "120363317105950393@g.us",
+      "fromMe": false,
+      "id": "2FE84AEA81A10EF39D",
+      "participant": "6283116752250@s.whatsapp.net"
+    },
+    "messageTimestamp": 1726469456,
+    "pushName": "kevin",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "?menu",
+        "contextInfo": {
+          "expiration": 0
+        }
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "6283116752250@s.whatsapp.net",
+      "fromMe": false,
+      "id": "6188129AC58E181C92"
+    },
+    "messageTimestamp": 1726469936,
+    "pushName": "kevin",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "?test 12",
+        "contextInfo": {
+          "expiration": 0,
+          "ephemeralSettingTimestamp": "0",
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT"
+          }
+        }
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "9VrQk8S5KWjsRQ==",
+          "senderTimestamp": "1725583771",
+          "recipientKeyHash": "LTYDQEw7hXgNeQ==",
+          "recipientTimestamp": "1725540321"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "6283116752250@s.whatsapp.net",
+      "fromMe": false,
+      "id": "C42F3995BE863A6D2D"
+    },
+    "messageTimestamp": 1726470007,
+    "pushName": "kevin",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "?menu",
+        "contextInfo": {
+          "expiration": 0,
+          "ephemeralSettingTimestamp": "0",
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT"
+          }
+        }
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "9VrQk8S5KWjsRQ==",
+          "senderTimestamp": "1725583771",
+          "recipientKeyHash": "LTYDQEw7hXgNeQ==",
+          "recipientTimestamp": "1725540321"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "6283116752250@s.whatsapp.net",
+      "fromMe": false,
+      "id": "0A2B5AFEC4B97F0E82"
+    },
+    "messageTimestamp": 1726470013,
+    "pushName": "kevin",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "?test 1",
+        "contextInfo": {
+          "expiration": 0,
+          "ephemeralSettingTimestamp": "0",
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT"
+          }
+        }
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "9VrQk8S5KWjsRQ==",
+          "senderTimestamp": "1725583771",
+          "recipientKeyHash": "LTYDQEw7hXgNeQ==",
+          "recipientTimestamp": "1725540321"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "6283116752250@s.whatsapp.net",
+      "fromMe": false,
+      "id": "B32A0C6AB75FF28DDE"
+    },
+    "messageTimestamp": 1726470081,
+    "pushName": "kevin",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "?menu",
+        "contextInfo": {
+          "expiration": 0,
+          "ephemeralSettingTimestamp": "0",
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT"
+          }
+        }
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "9VrQk8S5KWjsRQ==",
+          "senderTimestamp": "1725583771",
+          "recipientKeyHash": "LTYDQEw7hXgNeQ==",
+          "recipientTimestamp": "1725540321"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "6283116752250@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A21D24E65CCEAFBB4E"
+    },
+    "messageTimestamp": 1726470090,
+    "pushName": "kevin",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "?test 02",
+        "contextInfo": {
+          "expiration": 0,
+          "ephemeralSettingTimestamp": "0",
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT"
+          }
+        }
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "9VrQk8S5KWjsRQ==",
+          "senderTimestamp": "1725583771",
+          "recipientKeyHash": "LTYDQEw7hXgNeQ==",
+          "recipientTimestamp": "1725540321"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "6283116752250@s.whatsapp.net",
+      "fromMe": false,
+      "id": "33794467A7CD930368"
+    },
+    "messageTimestamp": 1726470258,
+    "pushName": "kevin",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "?test 15.04.30",
+        "contextInfo": {
+          "expiration": 0,
+          "ephemeralSettingTimestamp": "0",
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT"
+          }
+        }
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "9VrQk8S5KWjsRQ==",
+          "senderTimestamp": "1725583771",
+          "recipientKeyHash": "LTYDQEw7hXgNeQ==",
+          "recipientTimestamp": "1725540321"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  }
+]
