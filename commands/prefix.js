@@ -4,6 +4,7 @@ module.exports = {
     owner: true,
     execute: async ({sock, msg, msgText}) => {
         const sender = msg.key.remoteJid;
+        console.log(sender);
         const part = msgText.split(' ');
         if(part[1] == undefined){
             await sock.sendMessage(sender, { text: `masukan prefix nya kocak!!`}, { quoted: msg });

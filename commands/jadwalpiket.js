@@ -9,7 +9,7 @@ module.exports = {
             kamis: './media/image/rabu-kamis.jpg',
             jumat: './media/image/jumat.jpg'
         }
-        const date = new Date();
+        const date = global.time;
         const hari = ['minggu','senin','selasa','rabu','kamis','jumat'];
         const sender = msg.key.remoteJid;
         const send = {
