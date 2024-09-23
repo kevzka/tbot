@@ -1,5 +1,5 @@
 module.exports = {
-  name: "tagall",
+  name: "TagAll",
   onlyGroup: true,
   execute: async ({sock, msg, msgtext}) => {
     const sender = msg.key.remoteJid;
