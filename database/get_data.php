@@ -1,7 +1,7 @@
 <?php
 include 'database.php';
 
-$sql = "SELECT * FROM smktelkom"; // ganti dengan nama tabel kamu
+$sql = "SELECT * FROM september2024"; // ganti dengan nama tabel kamu
 $result = $conn->query($sql);
 
 $data = array();

@@ -2,10 +2,10 @@
 module.exports = {
     name: 'setprefix',
     owner: true,
-    execute: async ({sock, msg, msgText}) => {
+    execute: async ({sock, msg, msgtext}) => {
         const sender = msg.key.remoteJid;
         console.log(sender);
-        const part = msgText.split(' ');
+        const part = msgtext.split(' ');
         if(part[1] == undefined){
             await sock.sendMessage(sender, { text: `masukan prefix nya kocak!!`}, { quoted: msg });
         } else {

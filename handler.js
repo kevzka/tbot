@@ -1,3 +1,43 @@
+const loadCommands = require("./commands.js");
+const path = require("path");
+const fs = require("fs");
+//memuat semua commands
+
+let commands = loadCommands();
+
+// Function to reload commands
+function reloadCommands() {
+    console.log("Reloading commands...");
+    commands = loadCommands(); // Reload commands
+    console.log("Commands reloaded.");
+}
+
+// Function to watch files in the commands folder
+function watchCommandFiles() {
+    const commandsPath = path.join(__dirname, "commands");
+
+    fs.readdir(commandsPath, (err, files) => {
+        if (err) {
+            console.error("Error reading commands directory:", err);
+            return;
+        }
+
+        files.forEach((file) => {
+            const filePath = path.join(commandsPath, file);
+            // Watch each individual file
+            fs.watchFile(filePath, (curr, prev) => {
+                if (curr.mtime !== prev.mtime) {
+                    console.log(`${file} was modified, reloading commands...`);
+                    reloadCommands();
+                }
+            });
+        });
+    });
+}
+
+// Start watching command files
+watchCommandFiles();
+
 function recieveMessage() {
 	const {
 		readMessagesFromFile,
@@ -7,7 +47,6 @@ function recieveMessage() {
 	const connectToWhatsApp = require("./index");
 	const {
 		sock,
-		commands,
 		owner,
 		thumbnail,
 		downloadMediaMessage,
@@ -16,7 +55,7 @@ function recieveMessage() {
 	} = connectToWhatsApp;
 	let prefix, msg, isGroup, sender, readSender, date, text, commandName;
 	const { dailyPiket } = require('./commands/__dailyPiket');
-	dailyPiket();
+	dailyPiket({sock: sock});
 
 	async function checkMessage() {
 		console.log(`${commands[commandName].owner} ${owner.includes(sender)} ${commands[commandName].onlyGroup} ${isGroup}`); //debugging
@@ -87,7 +126,7 @@ function recieveMessage() {
 									await commands[commandName].execute({
 										sock: sock,
 										msg: msg,
-										msgText: text,
+										msgtext: text,
 										commands: commands,
 										thumbnail: thumbnail,
 										time: time

@@ -12,7 +12,7 @@ function loadCommands() {
             const command = require(`./commands/${file}`);
             if (command.name && typeof command.execute === 'function') {
                 commands[command.name] = { ...command };
-                console.log(file + ` done ` + global.time.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit', second: '2-digit' }));
+                console.log(file + ` done `/*  + global.time.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit', second: '2-digit' }) */);
             } else {
                 console.error(`File ${file} tidak memiliki struktur yang benar.`);
             }
@@ -21,6 +21,7 @@ function loadCommands() {
         }
     }
 
+    console.log(commands);
     return commands;
 }
 module.exports = loadCommands;

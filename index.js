@@ -12,7 +12,6 @@ const fs = require("fs");
 const { writeFile } = require("fs/promises");
 const path = require("path");
 const { userInfo } = require("os");
-const loadCommands = require("./commands.js");
 const { recieveMessage } = require("./handler.js");
 const sharp = require('sharp');
 const { is } = require("express/lib/request.js");
@@ -53,15 +52,13 @@ async function thumbnail(mediaPath) {
     if (isJam) {
         setInterval(() => {
             global.time = new Date();
-			console.log(global.time);
+			let globalTime = global.time;
+			// console.log(global.time.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit', second: '2-digit' }));
         }, 500);
     } else {
         console.log(`Waktu : ${isJam}`);
     }
 })(isJam);
-
-//memuat semua commands
-const commands = loadCommands();
 
 //memulai koneksi dengan whatsapp
 async function connectToWhatsApp() {
@@ -106,7 +103,6 @@ async function connectToWhatsApp() {
 	});
 	module.exports = {
 		sock,
-		commands,
 		owner,
 		thumbnail,
 		fs,

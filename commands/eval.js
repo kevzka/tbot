@@ -1,9 +1,9 @@
 module.exports = {
     name: 'eval',
     owner: true,
-    execute: async ({sock, msg, msgText}) => {
+    execute: async ({sock, msg, msgtext}) => {
         const sender = msg.key.remoteJid;
-        msgText = msgText.split(" ").slice(1).join(" ");
-        eval(msgText);
+        msgtext = msgtext.split(" ").slice(1).join(" ");
+        eval(msgtext);
     }
 };
