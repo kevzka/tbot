@@ -1,6 +1,6 @@
 // require('../index')
 module.exports = {
-    name: 'setprefix',
+    name: 'SetPrefix',
     owner: true,
     execute: async ({sock, msg, msgtext}) => {
         const sender = msg.key.remoteJid;
