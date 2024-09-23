@@ -43,7 +43,7 @@ module.exports = {
 			}
 		} else {
 			console.log("ini hari minggu atau sabtu"); //jamgam di ubah dape yang console" soale untuk debugging nanti
-			const teks = "masukan sendiri dape teks nya"; //masukan sendiri dape teks nya
+			const teks = "Hari *Sabtu* dan *Minggu* tidak ada piket !"; //masukan sendiri dape teks nya
 			await sock.sendMessage(sender, {text: teks}, { quoted: msg });
 		}
 	},
