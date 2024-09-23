@@ -2,35 +2,66 @@ module.exports = {
 	name: "menu",
 	execute: async ({ sock, commands, msg }) => {
 		const sender = msg.key.remoteJid;
-		let teks = ``;
-		let teks2 = {};
-		teks += `jam ${global.time.toLocaleTimeString("id-ID", {
+		let concatall = ``;
+		let concatrow = {};
+		concatall += `jam ${global.time.toLocaleTimeString("id-ID", {
 			hour: "2-digit",
 			minute: "2-digit",
 			second: "2-digit",
 		})}\n`;
-		for (let command in commands) {
-			for (let properti in commands[command]) {
-				let key =
-					properti != "name" && properti != "execute" ? properti : "name";
-				let properties = key === "name" ? "" : `(${properti})`;
-
-				if (!teks2[key]) {
-					teks2[key] = "";
-				}
-
-				let entry = `-> ${global.prefix}${command} ${properties}\n`;
-				if (!teks2[key].includes(entry)) {
-					teks2[key] += entry;
+		function toconcatall(concatrow) {
+			delete concatrow.execute;
+			concatall = "";
+			for (let properti in concatrow) {
+				concatall += concatrow[properti];
+			}
+			return concatall;
+		}
+		function checkincludevalue(include) {
+			for (let properti in concatrow) {
+				if (properti != "name") {
+					if (concatrow[properti].includes(include)) {
+						concatrow["name"] = concatrow["name"].replace(
+							`-> ${global.prefix}${include} \n`,
+							""
+						);
+					}
 				}
 			}
 		}
-
-		for (let properti in teks2) {
-			teks += teks2[properti];
+		for (let command in commands) {
+			let totalLength = 18;
+			for (let properti in commands[command]) {
+				let key = properti != "name" && properti != "execute" ? properti : "name";
+				let properties = key == "name" ? "no-category" : `${properti}`;
+				let teks = properties != "" ? `<[${properties}]>` : ``;
+				let paddingLength = totalLength - teks.length;
+				let padStartLength = Math.floor(paddingLength / 2);
+				teks =
+					teks
+						.padStart(teks.length + padStartLength, "━")
+						.padEnd(totalLength, "━") + `\n`;
+				teks = properties !=  "no-category" ? `┣━${teks}` : `┏━${teks}`;
+		
+				if (!concatrow[key]) {
+					concatrow[key] = "";
+				}
+				if (!concatrow[properti]) {
+					concatrow[properti] += "";
+				}
+				if (!concatrow[properti].includes(teks)) {
+					concatrow[properti] += teks;
+				}
+				let entry = `┠> ${global.prefix}${command}\n`;
+				concatrow[properti] += entry;
+				checkincludevalue(command);
+			}
+			toconcatall(concatrow);
+			let test = '━'
+			concatall += `┗`+ test.repeat(totalLength + 1);
 		}
+		console.log(concatrow);
 
-		console.log(teks2);
-		await sock.sendMessage(sender, { text: teks }, { quoted: msg });
+		await sock.sendMessage(sender, { text: concatall }, { quoted: msg });
 	},
 };
