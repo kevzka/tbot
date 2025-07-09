@@ -13,7 +13,7 @@ const { writeFile } = require("fs/promises");
 const path = require("path");
 const { userInfo } = require("os");
 const { recieveMessage } = require("./handler.js");
-const sharp = require('sharp');
+// const sharp = require('sharp');------------------------------------------------------------
 const { is } = require("express/lib/request.js");
 const { DATE } = require("mysql/lib/protocol/constants/types.js");
 let isJam = true;
@@ -36,17 +36,17 @@ fs.readFile("config.json", "utf8", (err, data) => {
 	}
 });
 
-async function thumbnail(mediaPath) {
-	const imagePath = path.join(__dirname, String(mediaPath));
-	const image = fs.readFileSync(imagePath);
+// async function thumbnail(mediaPath) {
+// 	const imagePath = path.join(__dirname, String(mediaPath));
+// 	const image = fs.readFileSync(imagePath);
 
-	// Buat thumbnail dengan sharp
-	const thumbnail = await sharp(image)
-		.resize(200) // Ukuran thumbnail
-		.jpeg()
-		.toBuffer();
-	return thumbnail;
-}
+// 	//Buat thumbnail dengan sharp------------------------------------------------------------
+// 	// const thumbnail = await sharp(image)------------------------------------------------------------
+// 		.resize(200) // Ukuran thumbnail
+// 		.jpeg()
+// 		.toBuffer();
+// 	return thumbnail;
+// }
 
 (function(isJam) {
     if (isJam) {
@@ -63,48 +63,55 @@ async function thumbnail(mediaPath) {
 //memulai koneksi dengan whatsapp
 async function connectToWhatsApp() {
 	const { state, saveCreds } = await useMultiFileAuthState("./auth");
+
 	const sock = makeWASocket({
 		auth: state,
-		printQRInTerminal: true,
 		logger: logger,
 	});
 
 	sock.ev.on("creds.update", saveCreds);
 
 	sock.ev.on("connection.update", async (update) => {
-		const { connection, lastDisconnect } = update;
+		const { connection, lastDisconnect, qr } = update;
+
+		// Tampilkan QR ke terminal jika tersedia
+		if (qr) {
+			const qrcode = require("qrcode-terminal");
+			qrcode.generate(qr, { small: true });
+		}
+
 		if (connection === "close") {
-			//koneksi tertutup
 			const shouldReconnect = Boom.isBoom(lastDisconnect?.error)
 				? lastDisconnect.error.output.statusCode !== DisconnectReason.loggedOut
 				: true;
+
 			console.log(
 				"connection closed due to ",
 				lastDisconnect?.error,
 				", reconnecting ",
 				shouldReconnect
 			);
+
 			if (shouldReconnect) {
 				connectToWhatsApp();
 			}
 		} else if (connection === "open") {
-			//koneksi tersambung
 			console.log("opened connection");
+
 			if (sock.user) {
-				console.log("Nomor WhatsApp yang terkoneksi:", myWhatsAppId);
+				console.log("Nomor WhatsApp yang terkoneksi:", sock.user.id);
 			} else {
-				myWhatsAppId = `${sock.user.id.replace(
-					":3@s.whatsapp.net",
-					""
-				)}@s.whatsapp.net`;
 				console.log("sock.user tidak terdefinisi!");
 			}
+
+			// Jalankan handler pesan masuk jika perlu
+			recieveMessage(sock);
 		}
 	});
 	module.exports = {
 		sock,
 		owner,
-		thumbnail,
+		// thumbnail,
 		fs,
 		path,
 		downloadMediaMessage,
