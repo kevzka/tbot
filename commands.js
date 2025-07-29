@@ -7,6 +7,14 @@ function loadCommands() {
     let owner = '';
     const commandFiles = fs.readdirSync(path.join(__dirname, 'commands')).filter(file => file.endsWith('.js'));
 
+    // console.log(commandFiles)
+
+    // const commands = commandFiles.reduce((acc, key) => {
+    // acc[key] = true; // atau bisa juga null, 0, '', dsb
+    // return acc;
+    // }, {});
+    // console.log(commands)
+
     for (const file of commandFiles) {
         try {
             const command = require(`./commands/${file}`);

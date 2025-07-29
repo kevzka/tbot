@@ -3,77 +3,88 @@ const path = require("path");
 const fs = require("fs");
 //memuat semua commands
 
-let commands = loadCommands();
-
-// Function to reload commands
-function reloadCommands() {
-    console.log("Reloading commands...");
-    commands = loadCommands(); // Reload commands
-    console.log("Commands reloaded.");
-}
-
-// Function to watch files in the commands folder
-function watchCommandFiles() {
-    const commandsPath = path.join(__dirname, "commands");
-
-    fs.readdir(commandsPath, (err, files) => {
-        if (err) {
-            console.error("Error reading commands directory:", err);
-            return;
-        }
-
-        files.forEach((file) => {
-            const filePath = path.join(commandsPath, file);
-            // Watch each individual file
-            fs.watchFile(filePath, (curr, prev) => {
-                if (curr.mtime !== prev.mtime) {
-                    console.log(`${file} was modified, reloading commands...`);
-                    reloadCommands();
-                }
-            });
-        });
-    });
-}
+let commands;
 
 // Start watching command files
 watchCommandFiles();
 
+// Function to reload commands
+function reloadCommands() {
+	console.log("Reloading commands...");
+	commands = loadCommands(); // Reload commands
+	console.log("Commands reloaded.");
+}
+
+// Function to watch files in the commands folder
+function watchCommandFiles() {
+	const commandsPath = path.join(__dirname, "commands");
+
+	fs.readdir(commandsPath, (err, files) => {
+		if (err) {
+			console.error("Error reading commands directory:", err);
+			return;
+		}
+
+		files.forEach((file) => {
+			const filePath = path.join(commandsPath, file);
+			// Watch each individual file
+			fs.watchFile(filePath, (curr, prev) => {
+				if (curr.mtime !== prev.mtime) {
+					console.log(`${file} was modified, reloading commands...`);
+					reloadCommands();
+				}
+			});
+		});
+	});
+}
+
+function checkCommands(commandName) {
+	const commands = {};
+	try {
+		const command = require(`./commands/${commandName}.js`);
+		commands[command.name] = command;
+		console.log(commands);
+		return commands;
+	} catch (error) {
+		console.log("ada error:", error.message);
+	}
+}
+
 function recieveMessage() {
+	commands = loadCommands();
 	// const {
 	// 	readMessagesFromFile,
 	// 	saveMessagesToFile,
 	// 	addMessage,
 	// } = require("./memory");
 	const connectToWhatsApp = require("./index");
-	const {
-		sock,
-		owner,
-		thumbnail,
-		downloadMediaMessage,
-		logger,
-		writeFile,
-	} = connectToWhatsApp;
+	const { sock, owner, thumbnail, downloadMediaMessage, logger, writeFile } =
+		connectToWhatsApp;
 	let prefix, msg, isGroup, sender, readSender, date, text, commandName;
-	const { dailyPiket } = require('./commands/__dailyPiket');
-	dailyPiket({sock: sock});
+	const { dailyPiket } = require("./commands/__dailyPiket");
+	dailyPiket({ sock: sock });
 
-	async function checkMessage() {
-		console.log(`${commands[commandName].owner} ${owner.includes(sender)} ${commands[commandName].onlyGroup} ${isGroup}`); //debugging
+	async function checkMessage(commands) {
+		console.log(
+			`${commands[commandName].owner} ${owner.includes(sender)} ${
+				commands[commandName].onlyGroup
+			} ${isGroup}`
+		); //debugging
 		if (commands[commandName].owner && !owner.includes(sender)) {
-		//Mengecek jika bukan owner
-		await sock.sendMessage(sender, { text: "hanya owner" });
-		return `owner`
-	} else if (commands[commandName].onlyGroup && !isGroup) {
-		await sock.sendMessage(
-			sender,
-			{ text: `hanya bisa di pakai di grup` },
-			{ quoted: msg }
-		);
-		return `onlyGroup`
-	} else { return true; }
+			//Mengecek jika bukan owner
+			await sock.sendMessage(sender, { text: "hanya owner" });
+			return `owner`;
+		} else if (commands[commandName].onlyGroup && !isGroup) {
+			await sock.sendMessage(
+				sender,
+				{ text: `hanya bisa di pakai di grup` },
+				{ quoted: msg }
+			);
+			return `onlyGroup`;
+		} else {
+			return true;
+		}
 	}
-
-
 
 	sock.ev.on("messages.upsert", async ({ messages, type }) => {
 		try {
@@ -116,9 +127,12 @@ function recieveMessage() {
 					if (text.startsWith(prefix) && text.length > 1) {
 						commandName = text.split(" ")[0].substring(1).toLowerCase(); // Mengambil nama command setelah `?`
 						// Mengeksekusi fungsi command jika ada
+						if(!commands){
+							commands = checkCommands(commandName);
+						}
 						if (commands[commandName]) {
 							try {
-								const checkResult = await checkMessage();
+								const checkResult = await checkMessage(commands);
 								console.log(checkResult);
 								if (checkResult === true) {
 									// handleMediaMessage(msg);
@@ -129,7 +143,7 @@ function recieveMessage() {
 										msgtext: text,
 										commands: commands,
 										thumbnail: thumbnail,
-										time: time
+										time: time,
 									});
 								}
 							} catch (err) {
@@ -165,7 +179,6 @@ function recieveMessage() {
 module.exports = {
 	recieveMessage,
 };
-
 
 /* async function handleMediaMessage(msg) {
     const fs = require("fs");

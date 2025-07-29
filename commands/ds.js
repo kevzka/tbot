@@ -13,7 +13,7 @@ module.exports = {
         console.log(teks);
         teks.splice(0,1);
         console.log(teks);
-        teks = teks.join(' ');w
+        teks = teks.join(' ');
 		async function run() {
 			try {
 				const chatCompletion = await client.chat.completions.create({
