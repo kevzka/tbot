@@ -39,11 +39,11 @@ function watchCommandFiles() {
 watchCommandFiles();
 
 function recieveMessage() {
-	const {
-		readMessagesFromFile,
-		saveMessagesToFile,
-		addMessage,
-	} = require("./memory");
+	// const {
+	// 	readMessagesFromFile,
+	// 	saveMessagesToFile,
+	// 	addMessage,
+	// } = require("./memory");
 	const connectToWhatsApp = require("./index");
 	const {
 		sock,
@@ -78,7 +78,7 @@ function recieveMessage() {
 	sock.ev.on("messages.upsert", async ({ messages, type }) => {
 		try {
 			if (type === "notify" && messages[0]?.message) {
-				await addMessage(messages[0]);
+				// await addMessage(messages[0]);
 				prefix = global.prefix;
 				msg = messages[0];
 				isGroup = msg.key.remoteJid.endsWith("@g.us");

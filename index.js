@@ -13,7 +13,7 @@ const { writeFile } = require("fs/promises");
 const path = require("path");
 const { userInfo } = require("os");
 const { recieveMessage } = require("./handler.js");
-// const sharp = require('sharp');------------------------------------------------------------
+const sharp = require('sharp');
 const { is } = require("express/lib/request.js");
 const { DATE } = require("mysql/lib/protocol/constants/types.js");
 let isJam = true;
@@ -36,17 +36,17 @@ fs.readFile("config.json", "utf8", (err, data) => {
 	}
 });
 
-// async function thumbnail(mediaPath) {
-// 	const imagePath = path.join(__dirname, String(mediaPath));
-// 	const image = fs.readFileSync(imagePath);
+async function thumbnail(mediaPath) {
+	const imagePath = path.join(__dirname, String(mediaPath));
+	const image = fs.readFileSync(imagePath);
 
-// 	//Buat thumbnail dengan sharp------------------------------------------------------------
-// 	// const thumbnail = await sharp(image)------------------------------------------------------------
-// 		.resize(200) // Ukuran thumbnail
-// 		.jpeg()
-// 		.toBuffer();
-// 	return thumbnail;
-// }
+	//Buat thumbnail dengan sharp------------------------------------------------------------
+	const thumbnail = await sharp(image)
+		.resize(200) // Ukuran thumbnail
+		.jpeg()
+		.toBuffer();
+	return thumbnail;
+}
 
 (function(isJam) {
     if (isJam) {
@@ -111,13 +111,13 @@ async function connectToWhatsApp() {
 	module.exports = {
 		sock,
 		owner,
-		// thumbnail,
+		thumbnail,
 		fs,
 		path,
 		downloadMediaMessage,
 		logger,
 		writeFile,
 	};
-	recieveMessage();
+	// recieveMessage();
 }
 connectToWhatsApp();

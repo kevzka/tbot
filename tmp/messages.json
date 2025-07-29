@@ -1,0 +1,624 @@
+[
+  {
+    "key": {
+      "remoteJid": "6283116752250@s.whatsapp.net",
+      "fromMe": false,
+      "id": "3FE266088972F485D254"
+    },
+    "messageTimestamp": 1753713473,
+    "pushName": "Vein",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "?ha",
+        "contextInfo": {
+          "expiration": 0,
+          "ephemeralSettingTimestamp": "0",
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT"
+          }
+        }
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "vLhalsr3+/+P5A==",
+          "senderTimestamp": "1753423995",
+          "recipientKeyHash": "NKLZGYATC4eD2A==",
+          "recipientTimestamp": "1753354806"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "6283116752250@s.whatsapp.net",
+      "fromMe": false,
+      "id": "3F64850EC35169C9BC79"
+    },
+    "messageTimestamp": 1753713481,
+    "pushName": "Vein",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "?ds halo",
+        "contextInfo": {
+          "expiration": 0,
+          "ephemeralSettingTimestamp": "0",
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT"
+          }
+        }
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "vLhalsr3+/+P5A==",
+          "senderTimestamp": "1753423995",
+          "recipientKeyHash": "NKLZGYATC4eD2A==",
+          "recipientTimestamp": "1753354806"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "6283116752250@s.whatsapp.net",
+      "fromMe": false,
+      "id": "3FDD8D1B04DD2E147CD6"
+    },
+    "messageTimestamp": 1753713665,
+    "pushName": "Vein",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "?ds halo",
+        "contextInfo": {
+          "expiration": 0,
+          "ephemeralSettingTimestamp": "0",
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT"
+          }
+        }
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "vLhalsr3+/+P5A==",
+          "senderTimestamp": "1753423995",
+          "recipientKeyHash": "NKLZGYATC4eD2A==",
+          "recipientTimestamp": "1753354806"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "6283116752250@s.whatsapp.net",
+      "fromMe": false,
+      "id": "3F7C2CF7F8D6978A18E9"
+    },
+    "messageTimestamp": 1753713775,
+    "pushName": "Vein",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "?ds hlo",
+        "contextInfo": {
+          "expiration": 0,
+          "ephemeralSettingTimestamp": "0",
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT"
+          }
+        }
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "vLhalsr3+/+P5A==",
+          "senderTimestamp": "1753423995",
+          "recipientKeyHash": "NKLZGYATC4eD2A==",
+          "recipientTimestamp": "1753354806"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "120363317105950393@g.us",
+      "fromMe": false,
+      "id": "3FBF63513F19941AFEA7",
+      "participant": "6283116752250@s.whatsapp.net"
+    },
+    "messageTimestamp": 1753713906,
+    "pushName": "Vein",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "@6283150986119 anjay ada ajo. tu kan di bolehin jr spa kd",
+        "contextInfo": {
+          "mentionedJid": [
+            "6283150986119@s.whatsapp.net"
+          ],
+          "expiration": 0
+        }
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "6283116752250@s.whatsapp.net",
+      "fromMe": false,
+      "id": "3FA6FDBB9EEAF423D1D8"
+    },
+    "messageTimestamp": 1753713916,
+    "pushName": "Vein",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "?ds halo\\",
+        "contextInfo": {
+          "expiration": 0,
+          "ephemeralSettingTimestamp": "0",
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT"
+          }
+        }
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "vLhalsr3+/+P5A==",
+          "senderTimestamp": "1753423995",
+          "recipientKeyHash": "NKLZGYATC4eD2A==",
+          "recipientTimestamp": "1753354806"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "120363317105950393@g.us",
+      "fromMe": false,
+      "id": "D32A3458DCAC0FFBA1FD0488C3C300BC",
+      "participant": "6281528543520@s.whatsapp.net"
+    },
+    "messageTimestamp": 1753713972,
+    "pushName": "Sovereign",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "memang siapa yang ngelarang pin",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "3FBF63513F19941AFEA7",
+          "participant": "6283116752250@s.whatsapp.net",
+          "quotedMessage": {
+            "extendedTextMessage": {
+              "text": "@6283150986119 anjay ada ajo. tu kan di bolehin jr spa kd",
+              "previewType": "NONE",
+              "contextInfo": {
+                "mentionedJid": [
+                  "6283150986119@s.whatsapp.net"
+                ]
+              },
+              "inviteLinkGroupTypeV2": "DEFAULT",
+              "linkPreviewMetadata": {}
+            }
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT",
+        "linkPreviewMetadata": {}
+      },
+      "messageContextInfo": {
+        "messageSecret": "nl/wgJFAc0F3Oc8RbNnVkYjctY68wa1uigfj0V3CcJQ="
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "120363317105950393@g.us",
+      "fromMe": false,
+      "id": "3FA43566CB714874CE4C",
+      "participant": "6283116752250@s.whatsapp.net"
+    },
+    "messageTimestamp": 1753713979,
+    "pushName": "Vein",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "aku",
+        "contextInfo": {
+          "stanzaId": "D32A3458DCAC0FFBA1FD0488C3C300BC",
+          "participant": "6281528543520@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "memang siapa yang ngelarang pin",
+            "messageContextInfo": {
+              "messageSecret": "nl/wgJFAc0F3Oc8RbNnVkYjctY68wa1uigfj0V3CcJQ="
+            }
+          },
+          "expiration": 0
+        }
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "120363317105950393@g.us",
+      "fromMe": false,
+      "id": "DCA9EBB65233B03F0C397C936054D0B3",
+      "participant": "6281528543520@s.whatsapp.net"
+    },
+    "messageTimestamp": 1753713995,
+    "pushName": "Sovereign",
+    "broadcast": false,
+    "message": {
+      "stickerMessage": {
+        "url": "https://mmg.whatsapp.net/v/t62.15575-24/13843849_1767890857423644_644690115723392302_n.enc?ccb=11-4&oh=01_Q5Aa2AH-SkIKM5a5jN5Lpzhe0PKo2PYgbsMPXtfbDtqwvcF_DQ&oe=68AEEB6A&_nc_sid=5e03e0&mms3=true",
+        "fileSha256": "jg89/PlQU7JO6ueP009OWfKfzoSagwHeP9ykZ1rxUQw=",
+        "fileEncSha256": "pr1TcZgh62xaWa3vKtTErlJgDK6IZPy2JWBmUVRnKIc=",
+        "mediaKey": "ZVyjR9RB5i8UncRnTzBxTSTlVtSNgvJ8572Og1ij5uE=",
+        "mimetype": "image/webp",
+        "directPath": "/v/t62.15575-24/13843849_1767890857423644_644690115723392302_n.enc?ccb=11-4&oh=01_Q5Aa2AH-SkIKM5a5jN5Lpzhe0PKo2PYgbsMPXtfbDtqwvcF_DQ&oe=68AEEB6A&_nc_sid=5e03e0",
+        "fileLength": "9170",
+        "mediaKeyTimestamp": "1753713994",
+        "isAnimated": false,
+        "contextInfo": {
+          "stanzaId": "3FA43566CB714874CE4C",
+          "participant": "6283116752250@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "aku"
+          }
+        },
+        "stickerSentTs": "1753713994775",
+        "isAvatar": false,
+        "isAiSticker": false,
+        "isLottie": false
+      },
+      "messageContextInfo": {
+        "messageSecret": "o7us123FI5W6qA81bW2YkGjlkFrsvPxdeYOQ17Ogx9c="
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "6283116752250@s.whatsapp.net",
+      "fromMe": false,
+      "id": "3F887A6D765FF49E2F22"
+    },
+    "messageTimestamp": 1753714104,
+    "pushName": "Vein",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "?ds halo",
+        "contextInfo": {
+          "expiration": 0,
+          "ephemeralSettingTimestamp": "0",
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT"
+          }
+        }
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "vLhalsr3+/+P5A==",
+          "senderTimestamp": "1753423995",
+          "recipientKeyHash": "NKLZGYATC4eD2A==",
+          "recipientTimestamp": "1753354806"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "6283116752250@s.whatsapp.net",
+      "fromMe": false,
+      "id": "3FAAB567F5B7022C458B"
+    },
+    "messageTimestamp": 1753714133,
+    "pushName": "Vein",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "?ds kamu bisa pake Bahasa indo?",
+        "contextInfo": {
+          "expiration": 0,
+          "ephemeralSettingTimestamp": "0",
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT"
+          }
+        }
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "vLhalsr3+/+P5A==",
+          "senderTimestamp": "1753423995",
+          "recipientKeyHash": "NKLZGYATC4eD2A==",
+          "recipientTimestamp": "1753354806"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "6283116752250@s.whatsapp.net",
+      "fromMe": false,
+      "id": "3FE6E0503E142A7ACAA8"
+    },
+    "messageTimestamp": 1753714144,
+    "pushName": "Vein",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "?ds tadi aku nanya tentang apa?",
+        "contextInfo": {
+          "expiration": 0,
+          "ephemeralSettingTimestamp": "0",
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT"
+          }
+        }
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "vLhalsr3+/+P5A==",
+          "senderTimestamp": "1753423995",
+          "recipientKeyHash": "NKLZGYATC4eD2A==",
+          "recipientTimestamp": "1753354806"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "6283116752250@s.whatsapp.net",
+      "fromMe": false,
+      "id": "3F867F84532846168F7E"
+    },
+    "messageTimestamp": 1753714333,
+    "pushName": "Vein",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "?ds halo",
+        "contextInfo": {
+          "expiration": 0,
+          "ephemeralSettingTimestamp": "0",
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT"
+          }
+        }
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "vLhalsr3+/+P5A==",
+          "senderTimestamp": "1753423995",
+          "recipientKeyHash": "NKLZGYATC4eD2A==",
+          "recipientTimestamp": "1753354806"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "6283116752250@s.whatsapp.net",
+      "fromMe": false,
+      "id": "3F84DA758B10B99FF277"
+    },
+    "messageTimestamp": 1753714423,
+    "pushName": "Vein",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "?ds halo",
+        "contextInfo": {
+          "expiration": 0,
+          "ephemeralSettingTimestamp": "0",
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT"
+          }
+        }
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "vLhalsr3+/+P5A==",
+          "senderTimestamp": "1753423995",
+          "recipientKeyHash": "NKLZGYATC4eD2A==",
+          "recipientTimestamp": "1753354806"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "6283116752250@s.whatsapp.net",
+      "fromMe": false,
+      "id": "3FE05CF19429E33277AE"
+    },
+    "messageTimestamp": 1753714435,
+    "pushName": "Vein",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "?ds aku sedang bertanya mengenai apa?",
+        "contextInfo": {
+          "expiration": 0,
+          "ephemeralSettingTimestamp": "0",
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT"
+          }
+        }
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "vLhalsr3+/+P5A==",
+          "senderTimestamp": "1753423995",
+          "recipientKeyHash": "NKLZGYATC4eD2A==",
+          "recipientTimestamp": "1753354806"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "6283116752250@s.whatsapp.net",
+      "fromMe": false,
+      "id": "3FF8E5040A54D45F4618"
+    },
+    "messageTimestamp": 1753714511,
+    "pushName": "Vein",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "?ds aku sedang bertanya mengenai apa?",
+        "contextInfo": {
+          "expiration": 0,
+          "ephemeralSettingTimestamp": "0",
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT"
+          }
+        }
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "vLhalsr3+/+P5A==",
+          "senderTimestamp": "1753423995",
+          "recipientKeyHash": "NKLZGYATC4eD2A==",
+          "recipientTimestamp": "1753354806"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "6283116752250@s.whatsapp.net",
+      "fromMe": false,
+      "id": "3F4F6D298514BB31F9D5"
+    },
+    "messageTimestamp": 1753714580,
+    "pushName": "Vein",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "?ds aku sedang bertanya mengenai apa?",
+        "contextInfo": {
+          "expiration": 0,
+          "ephemeralSettingTimestamp": "0",
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT"
+          }
+        }
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "vLhalsr3+/+P5A==",
+          "senderTimestamp": "1753423995",
+          "recipientKeyHash": "NKLZGYATC4eD2A==",
+          "recipientTimestamp": "1753354806"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "6283116752250@s.whatsapp.net",
+      "fromMe": false,
+      "id": "3F48CD404CAD67F0567B"
+    },
+    "messageTimestamp": 1753714701,
+    "pushName": "Vein",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "?ds aku sedang bertanya mengenai apa?",
+        "contextInfo": {
+          "expiration": 0,
+          "ephemeralSettingTimestamp": "0",
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT"
+          }
+        }
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "vLhalsr3+/+P5A==",
+          "senderTimestamp": "1753423995",
+          "recipientKeyHash": "NKLZGYATC4eD2A==",
+          "recipientTimestamp": "1753354806"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "6283116752250@s.whatsapp.net",
+      "fromMe": false,
+      "id": "3F3A58C53C42F3972ED6"
+    },
+    "messageTimestamp": 1753714740,
+    "pushName": "Vein",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "?ds ukuran punya kamil berapa?",
+        "contextInfo": {
+          "expiration": 0,
+          "ephemeralSettingTimestamp": "0",
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT"
+          }
+        }
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "vLhalsr3+/+P5A==",
+          "senderTimestamp": "1753423995",
+          "recipientKeyHash": "NKLZGYATC4eD2A==",
+          "recipientTimestamp": "1753354806"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  },
+  {
+    "key": {
+      "remoteJid": "6283116752250@s.whatsapp.net",
+      "fromMe": false,
+      "id": "3F37CD9A8E540BB4A04A"
+    },
+    "messageTimestamp": 1753714751,
+    "pushName": "Vein",
+    "broadcast": false,
+    "message": {
+      "extendedTextMessage": {
+        "text": "?ds luas bumi berpa?",
+        "contextInfo": {
+          "expiration": 0,
+          "ephemeralSettingTimestamp": "0",
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT"
+          }
+        }
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "vLhalsr3+/+P5A==",
+          "senderTimestamp": "1753423995",
+          "recipientKeyHash": "NKLZGYATC4eD2A==",
+          "recipientTimestamp": "1753354806"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    }
+  }
+]
